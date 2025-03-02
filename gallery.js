@@ -46,22 +46,22 @@ window.onload = () => {
     Kakao.Share.sendDefault({
       objectType: "feed",
       content: {
-        title: "고한준 ♥ 유지원의 모바일 청첩장",
-        description: "결혼식에 초대합니다♡",
+        title: "김준호 ♥ 유서현의 모바일 청첩장",
+        description: "2024년 8월 31일 토요일♡",
         imageUrl: "https://i.imgur.com/wElurmN.png",
         imageWidth: 1200,
         imageHeight: 630,
         link: {
-          mobileWebUrl: "https://sample.luvle.co.kr",
-          webUrl: "https://sample.luvle.co.kr",
+          mobileWebUrl: "https://sample2.luvle.co.kr",
+          webUrl: "https://sample2.luvle.co.kr",
         },
       },
       buttons: [
         {
-          title: "자세히 보기",
+          title: "모바일청첩장 보러가기",
           link: {
-            mobileWebUrl: "https://sample.luvle.co.kr",
-            webUrl: "https://sample.luvle.co.kr",
+            mobileWebUrl: "https://sample2.luvle.co.kr",
+            webUrl: "https://sample2.luvle.co.kr",
           },
         },
       ],
@@ -117,10 +117,11 @@ window.onload = () => {
     window.location.href = link;
   });
 
-  // BGM
+  //BGM
   const playButton = document.getElementById("playButton");
   const audio = document.getElementById("bgm");
-  playButton.src = "img/play.png"; // 초기 상태는 play.png
+  // 초기 상태는 play.png
+  playButton.src = "img/play.png";
   playButton.addEventListener("click", function () {
     if (audio) {
       // 현재 오디오가 재생 중인지 여부를 확인
