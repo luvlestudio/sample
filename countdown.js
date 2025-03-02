@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   function updateCountdown() {
     // 결혼 날짜 설정 (년, 월(0부터 시작), 일, 시, 분)
-    const weddingDate = new Date(2025, 4, 3, 11, 00); // 예시: 2024년 10월 12일
+    const weddingDate = new Date(2025, 2, 22, 14, 20); // 예시: 2024년 10월 12일
 
     const currentDate = new Date();
     const timeDifference = weddingDate - currentDate;
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .toString()
         .padStart(2, "0");
     } else {
-      document.getElementById("coverdiscInfo").textContent = "저희 결혼합니다";
+      document.getElementById("coverdiscInfo").textContent = "결혼 축하합니다!";
       clearInterval(intervalID); // 결혼 날짜가 지나면 타이머 중지
     }
   }
